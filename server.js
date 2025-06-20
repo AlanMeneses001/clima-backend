@@ -6,7 +6,9 @@ import cors from 'cors';
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: 'https://alanmeneses001.github.io'
+}));
 
 const apiKey = process.env.OPENWEATHERMAP_API_KEY;
 
